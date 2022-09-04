@@ -75,6 +75,9 @@ TArray<FString> UCSVCreatorComponent::GetANSI_TextFile(FString SaveDirectory, FS
 		return ReturnValue;
 	}
 
+	else {
+		UE_LOG(LogTemp, Error, TEXT("FILE READING ERROR : File not found."));
+	}
 
 	return TArray<FString>();
 }
