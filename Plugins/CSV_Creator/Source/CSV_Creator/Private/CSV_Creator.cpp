@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+//All rights reserved to Igor Garcia 2022
 
 #include "CSV_Creator.h"
 

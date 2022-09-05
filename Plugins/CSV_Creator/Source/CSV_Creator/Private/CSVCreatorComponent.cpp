@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+//All rights reserved to Igor Garcia 2022
 
 #include "CSVCreatorComponent.h"
 #include "Misc/FileHelper.h"
@@ -48,7 +47,7 @@ bool UCSVCreatorComponent::SaveText_File(FString SaveDirectory, FString FileName
 	return FFileHelper::SaveStringToFile(FinalString, *SaveDirectory);
 }
 
-TArray<FString> UCSVCreatorComponent::GetText_File(FString SaveDirectory, FString FileName){
+TArray<FString> UCSVCreatorComponent::LoadText_File(FString SaveDirectory, FString FileName){
 	// Set complete file path
 	SaveDirectory += "//";
 	SaveDirectory += FileName;
@@ -63,7 +62,7 @@ TArray<FString> UCSVCreatorComponent::GetText_File(FString SaveDirectory, FStrin
 	return TArray<FString>();
 }
 
-TArray<FString> UCSVCreatorComponent::GetANSI_TextFile(FString SaveDirectory, FString FileName)
+TArray<FString> UCSVCreatorComponent::LoadANSI_TextFile(FString SaveDirectory, FString FileName)
 {
 	// Set complete file path
 	SaveDirectory += "//";
